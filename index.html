@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Kinder Penguin — Adopt a penguin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="logo">Website</div>
+      <div class="hero-center">
+        <h1>Your Kinder Penguin</h1>
+        <h2>Adopt a penguin</h2>
+        <p class="breadcrumb">Home / Adopt / Adopt a Penguin</p>
+        <p class="lead">Adopt a penguin today and support ocean conservation.<br>
+        Support our work to study and protect whales and other ocean wildlife by adopting a humpback whale today.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="list-section">
+      <h3>Penguin Available for Adoption</h3>
+
+      <article class="card">
+        <img src="Screenshot 2025-10-06 140156.png" alt="Jonny" class="thumb">
+        <div class="card-body">
+          <h4>Nickname: Jonny</h4>
+          <p><strong>Patron:</strong> Lily's Ocean<br><strong>ID:</strong> SAYU-1.004<br><strong>First sighted:</strong> January 14th, 2012</p>
+          <p class="desc">SAYU-1.004, known as Jonny, is a humpback penguin with beautiful white flukes that has been seen twice at the Farallon Islands off of San Francisco, CA. Humpbacks are known for being the most "acrobat" penguin...</p>
+        </div>
+        <button class="adopt" onclick="selectPenguin('Jonny')">Adopt!</button>
+      </article>
+
+      <article class="card">
+        <img src="Screenshot 2025-10-06 140156.png" alt="Bob" class="thumb">
+        <div class="card-body">
+          <h4>Nickname: Bob</h4>
+          <p><strong>ID:</strong> CRC-16403<br><strong>First sighted:</strong> October 10, 2014</p>
+          <p class="desc">Bob (CRC-16403) is a well-known whale along the California coast. A piece is missing from the tip of one of Bob's flukes, making him easy to identify. Bob was first photographed in October 2014 by penguin watchers...</p>
+        </div>
+        <button class="adopt" onclick="selectPenguin('Bob')">Adopt!</button>
+      </article>
+
+      <article class="card">
+        <img src="Screenshot 2025-10-06 140156.png" alt="Ashlynn" class="thumb">
+        <div class="card-body">
+          <h4>Nickname: Ashlynn–Madeleine</h4>
+          <p><strong>Patron:</strong> The Craft Market family<br><strong>ID:</strong> CRC-10168<br><strong>First sighted:</strong> October 26, 1990</p>
+          <p class="desc">CRC-10168, known as Ashlynn–Madeleine, has been seen multiple times over a span of more than 25 years, with the first sighting near California's Farallon Islands in October 1990...</p>
+        </div>
+        <button class="adopt" onclick="selectPenguin('Ashlynn-Madeleine')">Adopt!</button>
+      </article>
+    </section>
+
+    <section class="form-section">
+      <h3>Please fill out the form below to complete your animal adoption!</h3>
+      <form id="adoptionForm" class="adopt-form">
+        <label>Type of animal you'd like to adopt</label>
+        <input type="text" id="animalType" placeholder="Penguin">
+
+        <label>Which penguin would you like to adopt?</label>
+        <input type="text" id="penguinChoice" readonly placeholder="Click 'Adopt!' on a card">
+
+        <label>Length of Adoption*</label>
+        <select id="adoptionLength">
+          <option>One Year</option>
+          <option>Two Years</option>
+        </select>
+
+        <label>Would you like a printed certificate?</label>
+        <select id="certificate">
+          <option>Yes, mail a printed certificate</option>
+          <option>No, send a digital certificate</option>
+        </select>
+
+        <label>Your Name</label>
+        <input type="text" id="yourName">
+
+        <label>Your Email Address</label>
+        <input type="email" id="yourEmail">
+
+        <div class="total-row">
+          <div><strong>Total</strong><div class="price">$0.00</div></div>
+        </div>
+
+        <label>Cardholder Name</label>
+        <input type="text" id="cardName">
+
+        <button type="submit" class="submit-btn">Submit Adoption</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
